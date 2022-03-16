@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 const CONNECTION_URL = 'mongodb+srv://ramki45:pandian5!@cluster0.vna1k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-const PORT = 80;
+const PORT = 5000;
 
 mongoose.connect(CONNECTION_URL)
   .then(() => app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`)))
